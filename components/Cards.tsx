@@ -43,7 +43,7 @@ const OptionCard: React.FC<OptionCardProps> = ({
     >
       <CardHeader>
         <CardTitle>
-          <h4 className="text-gray-600">
+          <h4 className="text-gray-600 text-2xl">
             {option.label.charAt(0).toUpperCase() + option.label.slice(1)}
           </h4>
         </CardTitle>

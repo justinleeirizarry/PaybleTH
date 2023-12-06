@@ -1,6 +1,5 @@
-// StepTwo.tsx
 import React from "react";
-import { Controller } from "react-hook-form";
+import { Controller, UseFormReturn } from "react-hook-form";
 import {
   FormItem,
   FormLabel,
@@ -12,13 +11,17 @@ import DatePicker from "@/components/DatePicker";
 import OptionCard from "@/components/Cards";
 import BottomText from "./BottomText";
 
-interface StepTwoProps {
-  form: any;
-  paymentOptions: any;
-  next: any;
+interface PaymentOptions {
+  [key: string]: number;
 }
 
-const PaymentPlans: React.FC<StepTwoProps> = ({
+interface PaymentPlanProps {
+  form: any;
+  paymentOptions: PaymentOptions;
+  next: () => void;
+}
+
+const PaymentPlans: React.FC<PaymentPlanProps> = ({
   form,
   paymentOptions,
   next,

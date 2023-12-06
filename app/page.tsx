@@ -124,7 +124,6 @@ export default function Home() {
       ...values,
       amountOwed: parseFloat(values.amountOwed.replace(/,/g, "")),
     };
-    console.log({ newValues });
   };
 
   const next = async () => {
