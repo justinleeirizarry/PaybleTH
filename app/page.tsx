@@ -6,9 +6,7 @@ import { useState, useEffect } from "react";
 import { Form } from "@/components/ui/form";
 
 import PaymentSchedule from "@/components/PaymentShedule";
-
 import StepOne from "@/components/EnterInfo";
-
 import Navigation from "@/components/Navigation";
 import PaymentPlans from "@/components/PaymentPlans";
 

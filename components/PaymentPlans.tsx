@@ -38,7 +38,7 @@ const PaymentPlans: React.FC<StepTwoProps> = ({
           details on the next page!
         </p>
       </div>
-      <div className="flex flex-col space-y-10 p-6 border-solid border-2 w-full rounded-lg">
+      <div className="flex flex-col space-y-10 p-6 border-solid border-2 rounded-lg">
         <Controller
           control={form.control}
           name="startDate"
