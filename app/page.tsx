@@ -127,10 +127,6 @@ export default function Home() {
   };
 
   const next = async () => {
-    if (!formState.isValid) {
-      return;
-    }
-
     const fields = steps[currentStep].fields;
     const output = await form.trigger(fields as any[], { shouldFocus: true });
 
