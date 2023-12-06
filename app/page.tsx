@@ -205,7 +205,6 @@ export default function Home() {
         setCurrentStep={setCurrentStep}
         prev={prev}
         next={next}
-        isFormValid={formState.isValid}
       />
     </main>
   );
